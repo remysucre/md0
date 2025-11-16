@@ -26,7 +26,7 @@ bracket `]`, and `n` is a positive integer
 (non-zero). There must be a space between a link
 ref and any preceeding text, while the space can
 be omitted after the link ref. This is to support
-cases like `this [link].` where punctuation
+cases like `this [link],` where punctuation
 follows immediately after the link.
 - a **link def** takes the form `[n]: link` where
 `n` is a positive integer and `link` is a sequence

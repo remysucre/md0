@@ -6,7 +6,7 @@ If you are familiar with [gemtext][2], think of `md0` as that but with support f
 
 `md0` consists of two simple extensions to plain text: links and images, as follows:
 
-- a **link ref** takes the form `[word][n]` where `word` is a sequence of characters, none of which is a space, an opening bracket `[`, or a closing bracket `]`, and `n` is a positive integer (non-zero). There must be a space between a link ref and any preceeding text, while the space can be omitted after the link ref. This is to support cases like `this [link][2].` where punctuation follows immediately after the link.
+- a **link ref** takes the form `[word][n]` where `word` is a sequence of characters, none of which is a space, an opening bracket `[`, or a closing bracket `]`, and `n` is a positive integer (non-zero). There must be a space between a link ref and any preceeding text, while the space can be omitted after the link ref. This is to support cases like `this [link][2],` where punctuation follows immediately after the link.
 - a **link def** takes the form `[n]: link` where `n` is a positive integer and `link` is a sequence of non-space characters. Each link def must go on its own line, and all link refs must come after the main text content.
 - an **image ref** takes the form `![alt text][n]` where `alt text` is a sequence of characters, none of which is an opening bracket `[`, or a closing bracket `]`, and `n` is a positive integer. Link defs for images take the same form as above. Every image ref must be on its own line.
 
