@@ -1,6 +1,6 @@
-`md0` is a format for hypertext documents. It is designed to be easy to parse and render, and is a proper subset of [markdown][1]. The main goal is to make it easier to share text-based content online, for authors, readers, and tool builders. The original motivation is to create a format that can be easily consumed by resource-constrained devices. The following image shows this file rendered by the [ORBIT][6] browser on the [playdate][4] console:
+`md0` is a format for hypertext documents. It is designed to be easy to parse and render, and is a proper subset of [markdown][1]. The main goal is to make it easier to share text-based content online, for authors, readers, and tool builders. The original motivation is to create a format that can be easily consumed by resource-constrained devices. The following image shows this file rendered by the [ORBIT][6] browser on the [Playdate][4] console:
 
-![md0 on playdate][5]
+![md0 on Playdate][5]
 
 If you are familiar with [gemtext][2], think of `md0` as that but with support for inline links and also happens to be valid markdown (so you can convert it to different formats with existing tools). 
 

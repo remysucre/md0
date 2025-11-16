@@ -109,8 +109,8 @@ def test_layout():
         1: {'url': 'https://commonmark.org', 'refs': [('[markdown]', (2, 17))]},
         2: {'url': 'https://geminiprotocol.net/docs/gemtext-specification.gmi', 'refs': [('[gemtext]', (13, 25)), ('[link]', (28, 17))]},
         3: {'url': 'https://github.com/remysucre/md0', 'refs': [('[`render.py`]', (59, 13))]},
-        4: {'url': 'https://play.date', 'refs': [('[playdate]', (8, 39))]},
-        5: {'url': 'demo.gif', 'refs': [('![img]: md0 on playdate', (11, 0))]},
+        4: {'url': 'https://play.date', 'refs': [('[Playdate]', (8, 39))]},
+        5: {'url': 'demo.gif', 'refs': [('![img]: md0 on Playdate', (11, 0))]},
         6: {'url': 'https://github.com/remysucre/ORBIT', 'refs': [('[ORBIT]', (8, 16))]}
     }
 
