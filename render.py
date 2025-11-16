@@ -111,7 +111,7 @@ def test_layout():
         3: {'url': 'https://github.com/remysucre/md0', 'refs': [('[`render.py`]', (59, 13))]},
         4: {'url': 'https://play.date', 'refs': [('[Playdate]', (8, 39))]},
         5: {'url': 'demo.gif', 'refs': [('![img]: md0 on Playdate', (11, 0))]},
-        6: {'url': 'https://github.com/remysucre/ORBIT', 'refs': [('[ORBIT]', (8, 16))]}
+        6: {'url': 'https://github.com/remysucre/ORBIT', 'refs': [('[ORBIT]', (8, 16)), ('[ORBIT]', (64, 8))]}
     }
 
     assert laid_out == expected_output, f"Layout output mismatch"

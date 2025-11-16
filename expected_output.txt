@@ -56,10 +56,17 @@ its is a link), as `word` with an underline, in a
 different font, with a different background color,
 etc.
 
-A reference Python renderer implementation is
-available in [`render.py`]. It renders `md0` text
+A reference Python layout implementation is
+available in [`render.py`]. It lays out `md0` text
 with word wrapping at a maximum of 50 characters
-per line and returns the rendered text along with
+per line and returns the laid out text along with
 a dictionary mapping link numbers to their
-positions.
+positions. You can also check out the rendering
+code of [ORBIT] (in Lua) which shows how
+single-word link text makes it trivial to draw the
+link and caculate hit boxes. But the simplest way
+to render `md0` is just to print it verbatim and
+only make the link defs clickable - using IDs
+instead of the link itself in refs makes the raw
+text readable as-is.
 

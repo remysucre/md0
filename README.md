@@ -14,7 +14,7 @@ All other text is treated as plain text. This document is a valid `md0` file des
 
 Text is rendered line-by-line, and each line is rendered word-by-word (words are delimited by spaces), so consequtive spaces will be treated as a single space (but consequtive lines will be preserved). A link ref should be rendered in a way to distinguish it from plain text. This includes rendering it as-is (`[word][n]` already indicates its is a link), as `word` with an underline, in a different font, with a different background color, etc.
 
-A reference Python renderer implementation is available in [`render.py`][3]. It renders `md0` text with word wrapping at a maximum of 50 characters per line and returns the rendered text along with a dictionary mapping link numbers to their positions.
+A reference Python layout implementation is available in [`render.py`][3]. It lays out `md0` text with word wrapping at a maximum of 50 characters per line and returns the laid out text along with a dictionary mapping link numbers to their positions. You can also check out the rendering code of [ORBIT][6] (in Lua) which shows how single-word link text makes it trivial to draw the link and caculate hit boxes. But the simplest way to render `md0` is just to print it verbatim and only make the link defs clickable - using IDs instead of the link itself in refs makes the raw text readable as-is.
 
 [1]: https://commonmark.org
 [2]: https://geminiprotocol.net/docs/gemtext-specification.gmi

@@ -224,10 +224,17 @@ should be rendered in a way to distinguish it from plain text. This
 includes rendering it as-is (<code>[word][n]</code> already indicates
 its is a link), as <code>word</code> with an underline, in a different
 font, with a different background color, etc.</p>
-<p>A reference Python renderer implementation is available in <a
+<p>A reference Python layout implementation is available in <a
 href="https://github.com/remysucre/md0"><code>render.py</code></a>. It
-renders <code>md0</code> text with word wrapping at a maximum of 50
-characters per line and returns the rendered text along with a
-dictionary mapping link numbers to their positions.</p>
+lays out <code>md0</code> text with word wrapping at a maximum of 50
+characters per line and returns the laid out text along with a
+dictionary mapping link numbers to their positions. You can also check
+out the rendering code of <a
+href="https://github.com/remysucre/ORBIT">ORBIT</a> (in Lua) which shows
+how single-word link text makes it trivial to draw the link and caculate
+hit boxes. But the simplest way to render <code>md0</code> is just to
+print it verbatim and only make the link defs clickable - using IDs
+instead of the link itself in refs makes the raw text readable
+as-is.</p>
 </body>
 </html>
