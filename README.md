@@ -1,4 +1,4 @@
-`md0` is a format for hypertext documents. It is designed to be easy to parse and render, and is a proper subset of [markdown][1]. The main goal is to make it easier to share text-based content online, for authors, readers, and tool builders. The original motivation is to create a format that can be easily consumed by resource-constrained devices. The following image shows this file rendered on the [playdate][4] console:
+`md0` is a format for hypertext documents. It is designed to be easy to parse and render, and is a proper subset of [markdown][1]. The main goal is to make it easier to share text-based content online, for authors, readers, and tool builders. The original motivation is to create a format that can be easily consumed by resource-constrained devices. The following image shows this file rendered by the [ORBIT][6] browser on the [playdate][4] console:
 
 ![md0 on playdate][5]
 
@@ -21,3 +21,4 @@ A reference Python renderer implementation is available in [`render.py`][3]. It 
 [3]: https://github.com/remysucre/md0
 [4]: https://play.date
 [5]: demo.gif
+[6]: https://github.com/remysucre/ORBIT

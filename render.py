@@ -107,10 +107,11 @@ def test_layout():
 
     expected_links = {
         1: {'url': 'https://commonmark.org', 'refs': [('[markdown]', (2, 17))]},
-        2: {'url': 'https://geminiprotocol.net/docs/gemtext-specification.gmi', 'refs': [('[gemtext]', (12, 25)), ('[link]', (27, 17))]},
-        3: {'url': 'https://github.com/remysucre/md0', 'refs': [('[`render.py`]', (58, 13))]},
-        4: {'url': 'https://play.date', 'refs': [('[playdate]', (8, 16))]},
-        5: {'url': 'demo.gif', 'refs': [('![img]: md0 on playdate', (10, 0))]}
+        2: {'url': 'https://geminiprotocol.net/docs/gemtext-specification.gmi', 'refs': [('[gemtext]', (13, 25)), ('[link]', (28, 17))]},
+        3: {'url': 'https://github.com/remysucre/md0', 'refs': [('[`render.py`]', (59, 13))]},
+        4: {'url': 'https://play.date', 'refs': [('[playdate]', (8, 39))]},
+        5: {'url': 'demo.gif', 'refs': [('![img]: md0 on playdate', (11, 0))]},
+        6: {'url': 'https://github.com/remysucre/ORBIT', 'refs': [('[ORBIT]', (8, 16))]}
     }
 
     assert laid_out == expected_output, f"Layout output mismatch"
