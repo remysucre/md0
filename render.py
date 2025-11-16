@@ -106,11 +106,11 @@ def test_layout():
         expected_output = f.read()
 
     expected_links = {
-        1: {'url': 'https://commonmark.org', 'refs': [('[markdown]', (5, 17))]},
-        2: {'url': 'https://geminiprotocol.net/docs/gemtext-specification.gmi', 'refs': [('[gemtext]', (15, 25)), ('[link]', (30, 17))]},
-        3: {'url': 'https://github.com/remysucre/md0', 'refs': [('[`render.py`]', (61, 13))]},
-        4: {'url': 'https://play.date', 'refs': [('[playdate]', (11, 16))]},
-        5: {'url': 'https://github.com/remysucre/ORBIT/blob/main/demo.gif', 'refs': [('![img]: md0 on playdate', (13, 0))]}
+        1: {'url': 'https://commonmark.org', 'refs': [('[markdown]', (2, 17))]},
+        2: {'url': 'https://geminiprotocol.net/docs/gemtext-specification.gmi', 'refs': [('[gemtext]', (12, 25)), ('[link]', (27, 17))]},
+        3: {'url': 'https://github.com/remysucre/md0', 'refs': [('[`render.py`]', (58, 13))]},
+        4: {'url': 'https://play.date', 'refs': [('[playdate]', (8, 16))]},
+        5: {'url': 'demo.gif', 'refs': [('![img]: md0 on playdate', (10, 0))]}
     }
 
     assert laid_out == expected_output, f"Layout output mismatch"

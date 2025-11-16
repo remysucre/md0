@@ -1,7 +1,4 @@
-# md0: Simple Markdown Subset for Painless Parsing
-and Rendering
-
-md0 is a format for hypertext documents. It is
+`md0` is a format for hypertext documents. It is
 designed to be easy to parse and render, and is a
 proper subset of [markdown]. The main goal is to
 make it easier to share text-based content online,
@@ -13,15 +10,15 @@ rendered on the [playdate] console:
 
 ![img]: md0 on playdate
 
-If you are familiar with [gemtext], think of md0
+If you are familiar with [gemtext], think of `md0`
 as that but with support for inline links and also
 happens to be valid markdown (so you can convert
 it to different formats with existing tools).
 
-md0 consists of two simple extensions to plain
+`md0` consists of two simple extensions to plain
 text: links and images, as follows:
 
-- a *link ref* takes the form `[word][n]` where
+- a **link ref** takes the form `[word][n]` where
 `word` is a sequence of characters, none of which
 is a space, an opening bracket `[`, or a closing
 bracket `]`, and `n` is a positive integer
@@ -30,12 +27,12 @@ ref and any preceeding text, while the space can
 be omitted after the link ref. This is to support
 cases like `this [link].` where punctuation
 follows immediately after the link.
-- a *link def* takes the form `[n]: link` where
+- a **link def** takes the form `[n]: link` where
 `n` is a positive integer and `link` is a sequence
 of non-space characters. Each link def must go on
 its own line, and all link refs must come after
 the main text content.
-- an *image ref* takes the form `![alt text][n]`
+- an **image ref** takes the form `![alt text][n]`
 where `alt text` is a sequence of characters, none
 of which is an opening bracket `[`, or a closing
 bracket `]`, and `n` is a positive integer. Link
@@ -43,9 +40,9 @@ defs for images take the same form as above. Every
 image ref must be on its own line.
 
 All other text is treated as plain text. This
-document is a valid md0 file despite the use of
-*bold*, `code`, and paragraph headers from full
-markdown - those will simply be rendered verbatim.
+document is a valid `md0` file despite the use of
+**bold**, `code` syntax from full markdown - those
+will simply be rendered verbatim.
 
 Text is rendered line-by-line, and each line is
 rendered word-by-word (words are delimited by
@@ -59,8 +56,9 @@ different font, with a different background color,
 etc.
 
 A reference Python renderer implementation is
-available in [`render.py`]. It renders md0 text
+available in [`render.py`]. It renders `md0` text
 with word wrapping at a maximum of 50 characters
 per line and returns the rendered text along with
 a dictionary mapping link numbers to their
 positions.
+
