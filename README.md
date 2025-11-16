@@ -1,6 +1,6 @@
 # md0: Simple Markdown Subset for Painless Parsing and Rendering
 
-md0 is a format for hypertext documents. It is designed to be easy to parse and render, and is a proper subset of [markdown][1]. The main goal is to make it easier to share text-based content online, for authors, readers, and tool builders. The original motivation is to create a format that can be easily consumed by resource-constrained devices. The following image shows this file rendered on the [playdate console][4]:
+md0 is a format for hypertext documents. It is designed to be easy to parse and render, and is a proper subset of [markdown][1]. The main goal is to make it easier to share text-based content online, for authors, readers, and tool builders. The original motivation is to create a format that can be easily consumed by resource-constrained devices. The following image shows this file rendered on the [playdate][4] console:
 
 ![md0 on playdate][5]
 
@@ -10,7 +10,7 @@ md0 consists of two simple extensions to plain text: links and images, as follow
 
 - a *link ref* takes the form `[word][n]` where `word` is a sequence of characters, none of which is a space, an opening bracket `[`, or a closing bracket `]`, and `n` is a positive integer (non-zero). There must be a space between a link ref and any preceeding text, while the space can be omitted after the link ref. This is to support cases like `this [link][2].` where punctuation follows immediately after the link.
 - a *link def* takes the form `[n]: link` where `n` is a positive integer and `link` is a sequence of non-space characters. Each link def must go on its own line, and all link refs must come after the main text content.
-- an *image ref* takes the form `![alt text][n]` where `alt text` is a sequence of characters, none of which is an opening bracket `[`, or a closing bracket `]`, and `n` is a positive integer. Link defs for images take the same form as above.
+- an *image ref* takes the form `![alt text][n]` where `alt text` is a sequence of characters, none of which is an opening bracket `[`, or a closing bracket `]`, and `n` is a positive integer. Link defs for images take the same form as above. Every image ref must be on its own line.
 
 All other text is treated as plain text. This document is a valid md0 file despite the use of *bold*, `code`, and paragraph headers from full markdown - those will simply be rendered verbatim. 
 

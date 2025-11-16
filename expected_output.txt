@@ -9,7 +9,7 @@ for authors, readers, and tool builders. The
 original motivation is to create a format that can
 be easily consumed by resource-constrained
 devices. The following image shows this file
-rendered on the [playdate console][4]:
+rendered on the [playdate] console:
 
 ![img]: md0 on playdate
 
@@ -39,7 +39,8 @@ the main text content.
 where `alt text` is a sequence of characters, none
 of which is an opening bracket `[`, or a closing
 bracket `]`, and `n` is a positive integer. Link
-defs for images take the same form as above.
+defs for images take the same form as above. Every
+image ref must be on its own line.
 
 All other text is treated as plain text. This
 document is a valid md0 file despite the use of
